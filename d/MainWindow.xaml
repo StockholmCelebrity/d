@@ -1,0 +1,27 @@
+﻿<Window x:Class="d.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:d"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"
+                    Background="Gray" Height="70">
+            <TextBlock Text="Книги" FontSize="50"/>
+            <Separator Width="20" Margin="5"/>
+            <Button Content="Вперед" Margin="5" Click="Next_Click"/>
+            <Button Content="Назад" Margin="5" Click="Back_Click"/>
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Left"
+            Background="Gray" Width="120">
+            <Button Content="Главная" Margin="5" Click="ShowMain_Click"/>
+            <Button Content="Каталог книг" Margin="5" Click="ShowCatalog_Click"/>
+
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Background="LightGray"/>
+    </DockPanel>
+</Window>
