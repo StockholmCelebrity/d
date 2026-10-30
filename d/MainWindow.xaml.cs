@@ -33,6 +33,11 @@ namespace d
             MainFrame.Navigate(new CatalogPage());
         }
 
+        private void ShowInfo_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new info());
+        }
+
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             if (MainFrame.CanGoForward)

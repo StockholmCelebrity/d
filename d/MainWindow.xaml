@@ -19,9 +19,11 @@
             Background="Gray" Width="120">
             <Button Content="Главная" Margin="5" Click="ShowMain_Click"/>
             <Button Content="Каталог книг" Margin="5" Click="ShowCatalog_Click"/>
-
+            <Button Content="FAQ"  Height="30" Margin="5" Click="ShowInfo_Click"/>
+            
         </StackPanel>
-
+        
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Background="LightGray"/>
     </DockPanel>
 </Window>
+    

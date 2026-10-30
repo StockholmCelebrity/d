@@ -1,0 +1,33 @@
+﻿<Page x:Class="d.Pages.info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:d.Pages"
+        mc:Ignorable="d"
+        Title="info" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <StackPanel Orientation="Horizontal" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Left" 
+                Margin="20,20,0,0">
+
+                <TextBlock Text="Автор - " 
+                   FontSize="50" 
+                   Foreground="White" 
+                   VerticalAlignment="Center"/>
+
+                <Image Source="/Images/ceo.jpg" 
+               Width="100" 
+               Height="100" 
+               Stretch="Uniform" 
+               VerticalAlignment="Center" 
+               Margin="10,0,0,0"/>
+
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Page>
